@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mynex - Venta de Portátiles</title>
+    <link rel="icon" href="imagen/icono.ico">
+    <link rel="stylesheet" href="productos.html">
+    <link rel="stylesheet" href="contacto.html">
+    <style>
+        /* Estilos CSS aquí */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* Color de fondo */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco para secciones */
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: 20px; /* Añadir margen superior */
+        }
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .product {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        /* Estilo para poder cambiar el  "Bienvenido a Mynex" */
+        #inicio h2 {
+            font-size: 36px; /* Tamaño de fuente más grande */
+            color: #3d7bb6; /* Cambiar color del texto */
+            font-weight: bold; /* Hacer el texto negrita */
+            text-transform: uppercase; /* Convertir texto a mayúsculas */
+            text-align: center; /* Centrar el texto */
+        }
+        /* Estilos para el texto "Encuentra las mejores computadoras al mejor precio" */
+        #inicio p {
+            font-size: 24px; /* Tamaño de fuente más grande */
+            color: #555; /* Cambiar color del texto */
+            text-align: center; /* Centrar el texto */
+            margin-top: 10px; /* Añadir margen superior */
+            font-style: italic; /* Aplicar estilo cursiva */
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Mynex - Venta de Computadoras</h1>
+    </header>
+
+    <nav>
+        <a href="otraprueba.html" >Inicio</a> |
+        <a href="productos.html">Productos</a> | <!-- Enlace a la página de productos -->
+        <a href="contacto.html">Contacto</a> |
+        <a href="sobre_nosotros.html">Sobre Nosotros</a>
+    </nav>
+    <section id="inicio">
+        <h2>Bienvenido a Mynex</h2>
+
+
+
+
+        <head>
+            <meta charset="UTF-8">
+            <style>
+                #imageContainer {
+                    width: 1300px;
+                    height: 500px;
+                    position: relative;
+                    overflow: hidden;
+                }
+            
+                .image {
+                    max-width: 300%;
+                    max-height: 500%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    transition: opacity 1s;
+                }
+            
+                .visible {
+                    opacity: 1;
+                }
+            </style>
+            </head>
+            <body>
+                <div id="imageContainer">
+                    <img class="image visible" src="imagen/web8.jpg" height="400px" alt="Imagen 1">
+                    <img class="image visible" src="imagen/web3.jpg" height="300px" alt="Imagen 1">
+                    <img class="image visible" src="imagen/web7.jpg" height="300px" alt="Imagen 1">
+                    <img class="image visible" src="imagen/web6.jpg" height="400px" alt="Imagen 1">
+                </div>
+            
+                <script>
+                    const images = document.querySelectorAll('.image');
+                    let index = 0;
+            
+                    function showImage() {
+                        images.forEach(img => img.classList.remove('visible'));
+                        images[index].classList.add('visible');
+                        index = (index + 1) % images.length;
+                        setTimeout(showImage, 3000); // Cambiar de imagen cada 3 segundos (3000 ms)
+                    }
+            
+                    showImage(); // Iniciar la sucesión de imágenes
+                </script>
+            </body>
+
+        <p>¡Encuentra las mejores ofertas en computadoras!</p>
+    </section>
+
+    <!-- Contenido de la página de productos se encuentra en "productos.html" -->
+    <footer>
+        <p>© 2024 Mynex - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
+    
+
+
+    
